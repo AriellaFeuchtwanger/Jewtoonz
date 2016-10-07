@@ -1,0 +1,19 @@
+body{
+    background-color: #ADFF12;
+}
+form{
+    align-content: center;
+    width: 70%;
+    margin-left: 15%;
+    clear: both;
+}
+
+input{
+    float: right;
+    clear: both;
+}
+
+#header{
+    background-color:#FF1294;
+    height: 10%;
+}

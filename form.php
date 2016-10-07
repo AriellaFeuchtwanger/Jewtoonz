@@ -1,14 +1,15 @@
 <?php include("header.php");?>
 
         <form method="post" action="accountSummary.php">
-            <label> User Name: <br/></label>
-            <input type="text" name="userName"><br/>
-            <label> Email: <br/></label>
+            <label> User Name: </label>
+            <input type="text" name="userName">
+            <br>
+            <label> Email:</label>
             <input type="text" name="email"><br/>
-            <label>Password: <br/></label>
+            <label>Password: </label>
             <input type="password" name="password"><br/>
-            <input type="radio" name="gender" value="male" checked> Male<br/>
-            <input type="radio" name="gender" value="female"> Female<br/>
+            <label>Male<input type="radio" name="gender" value="male" checked></label>
+            <label>Female<input type="radio" name="gender" value="female"> </label><br>
             <label>What type of cartoons do you like?</label>
             <select name="type">
                 <!--I have no idea what types of jewtoonz there are
@@ -23,6 +24,6 @@
             <input type="submit" value="Create Account"/>
         </form>
         <?php
-        include("header.php");
+        include("footer.php");
         ?>
     
