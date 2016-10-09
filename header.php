@@ -5,4 +5,8 @@
         <link href="styles.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <img src="images/JEWTOONZ.png"/>
+        <div id="logo">
+            <img src="images/JEWTOONZ.png"/>
+        </div>
+    </body>
+</html>
