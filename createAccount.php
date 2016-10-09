@@ -10,8 +10,10 @@ include ("menu.php");
     <input type="text" name="email"><br/>
     <label>Password: </label>
     <input type="password" name="password"><br/>
+    <div>
     <label>Male<input type="radio" name="gender" value="male" checked></label>
     <label>Female<input type="radio" name="gender" value="female"> </label><br>
+    </div>
     <label>What type of cartoons do you like?</label>
     <select name="type">
         <!--I have no idea what types of jewtoonz there are

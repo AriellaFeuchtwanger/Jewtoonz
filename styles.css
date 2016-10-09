@@ -8,8 +8,12 @@ form{
     clear: both;
 }
 
-input{
+input[type=text], input[type=password]{
     float: right;
+    clear: both;
+}
+
+label{
     clear: both;
 }
 
@@ -52,4 +56,8 @@ ul li:hover ul.dropdown{
 }
 ul li ul.dropdown li{
     display: block;
+}
+
+#logo{
+    margin-left: 30%;
 }
