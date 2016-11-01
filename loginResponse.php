@@ -1,4 +1,5 @@
 <?php
+require_once "databaseConnection.php";
 include("header.php");
 include("menu.php");
 session_start();
@@ -6,28 +7,14 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$validUsernames = ["User1", "User2", "User3"];
-$validPasswords = ["123456"];
+//$validUsernames = ["User1", "User2", "User3"];
+//$validPasswords = ["123456"];
 
-$valid = false;
+$result = mysqli_query($conn, sprintf("select count(userid) as count from user where email='%s' and password='%s'", $username, $password));
+echo mysqli_error($conn);
+$result = mysqli_fetch_assoc($result);
 
-foreach($validUsernames as $name){
-    if($username == $name){
-        $valid = true;
-        break;
-    }
-}
-
-foreach($validPasswords as $p){
-        if($password == $p){
-            $valid = true;
-            break;
-        } else{
-            $valid = false;
-        }
-    }
-
-if($valid){
+if($result['count'] == 1){
     echo "<h4>Use <a href='content.php'>this link</a> to see the super-secure content!";
     setcookie('username', $username);
     $_SESSION['LoggedIn'] = true;

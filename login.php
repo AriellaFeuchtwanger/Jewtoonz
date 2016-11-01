@@ -1,4 +1,5 @@
 <?php
+require_once 'databaseConnection.php';
 include("header.php");
 include("menu.php");
 ?>
