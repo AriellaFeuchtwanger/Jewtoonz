@@ -1,0 +1,124 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema Jewtoonz
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema Jewtoonz
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Jewtoonz` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `Jewtoonz` ;
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`User`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`User` (
+  `userID` INT NOT NULL,
+  `firstName` VARCHAR(45) NOT NULL,
+  `lastName` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`userID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`JewtoonCategory`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`JewtoonCategory` (
+  `jewtoonCategoryID` INT NOT NULL,
+  `jewtoonCategoryName` VARCHAR(15) NOT NULL,
+  PRIMARY KEY (`jewtoonCategoryID`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`JewtoonImage`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`JewtoonImage` (
+  `imageID` INT NOT NULL,
+  `jewtoonCategoryID` INT NOT NULL,
+  PRIMARY KEY (`imageID`),
+  INDEX `fk_Jewtoon_JewtoonCategory1_idx` (`jewtoonCategoryID` ASC),
+  CONSTRAINT `fk_Jewtoon_JewtoonCategory1`
+    FOREIGN KEY (`jewtoonCategoryID`)
+    REFERENCES `Jewtoonz`.`JewtoonCategory` (`jewtoonCategoryID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`Post`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`Post` (
+  `postID` INT NOT NULL,
+  `userID` INT NOT NULL,
+  `imageID` INT NOT NULL,
+  `timePosted` DATE NOT NULL,
+  `Title` VARCHAR(45) NULL,
+  PRIMARY KEY (`postID`, `imageID`, `userID`),
+  INDEX `fk_Post_User1_idx` (`userID` ASC),
+  INDEX `fk_Post_Jewtoon1_idx` (`imageID` ASC),
+  CONSTRAINT `fk_Post_User1`
+    FOREIGN KEY (`userID`)
+    REFERENCES `Jewtoonz`.`User` (`userID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Post_Jewtoon1`
+    FOREIGN KEY (`imageID`)
+    REFERENCES `Jewtoonz`.`JewtoonImage` (`imageID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`Comment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`Comment` (
+  `commentID` INT NOT NULL,
+  `commentText` VARCHAR(100) NOT NULL,
+  `userID` INT NOT NULL,
+  `timePosted` DATETIME NOT NULL,
+  PRIMARY KEY (`commentID`, `userID`),
+  INDEX `fk_Comment_User1_idx` (`userID` ASC),
+  CONSTRAINT `fk_Comment_User1`
+    FOREIGN KEY (`userID`)
+    REFERENCES `Jewtoonz`.`User` (`userID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Jewtoonz`.`PostComment`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jewtoonz`.`PostComment` (
+  `postCommentID` INT NOT NULL,
+  `commentID` INT NOT NULL,
+  `postID` INT NOT NULL,
+  PRIMARY KEY (`postCommentID`),
+  INDEX `fk_PostComment_Comment1_idx` (`commentID` ASC),
+  INDEX `fk_PostComment_Post1_idx` (`postID` ASC),
+  CONSTRAINT `fk_PostComment_Comment1`
+    FOREIGN KEY (`commentID`)
+    REFERENCES `Jewtoonz`.`Comment` (`commentID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_PostComment_Post1`
+    FOREIGN KEY (`postID`)
+    REFERENCES `Jewtoonz`.`Post` (`postID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
