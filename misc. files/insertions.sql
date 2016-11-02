@@ -9,5 +9,7 @@
  */
 
 insert into usertype (typeid, typename) values (1, 'user');
+insert into usertype (typeid, typeName) values (2, 'guest');
 insert into user (userid, firstName, lastName, email, password, userTypeID) values
 (1, 'User', '01', 'user01@gmail.com', '123456', 1);
+

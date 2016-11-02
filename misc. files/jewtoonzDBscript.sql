@@ -35,17 +35,6 @@ CREATE TABLE Jewtoonz.User (
     references jewtoonz.usertype (typeID)
   );
 
-CREATE TABLE Jewtoonz.Comment (
-  commentID INT NOT NULL,
-  commentText VARCHAR(100) NOT NULL,
-  userID INT NOT NULL,
-  timePosted DATETIME NOT NULL,
-  PRIMARY KEY (commentID, userID),
-  CONSTRAINT fk_Comment_User1
-    FOREIGN KEY (userID)
-    REFERENCES Jewtoonz.User (userID)
-    );
-
 CREATE TABLE Jewtoonz.Post (
   postID INT NOT NULL,
   userID INT NOT NULL,
@@ -61,15 +50,17 @@ CREATE TABLE Jewtoonz.Post (
     REFERENCES Jewtoonz.JewtoonImage (imageID)
     );
     
-CREATE TABLE Jewtoonz.PostComment (
-  postCommentID INT NOT NULL,
+CREATE TABLE Jewtoonz.Comment (
   commentID INT NOT NULL,
-  postID INT NOT NULL,
-  PRIMARY KEY (postCommentID),
-  CONSTRAINT fk_PostComment_Comment1
-    FOREIGN KEY (commentID)
-    REFERENCES Jewtoonz.Comment (commentID),
-  CONSTRAINT fk_PostComment_Post1
-    FOREIGN KEY (postID)
-    REFERENCES Jewtoonz.Post (postID)
+  commentText VARCHAR(100) NOT NULL,
+  userID INT NOT NULL,
+  timePosted DATETIME NOT NULL,
+  postID int not null,
+  PRIMARY KEY (commentID, userID, postID),
+  CONSTRAINT fk_Comment_User1
+    FOREIGN KEY (userID)
+    REFERENCES Jewtoonz.User (userID),
+  constraint fk_Comment_postID1
+	foreign key (postID)
+    references jewtoonz.post (postID)
     );
