@@ -2,13 +2,13 @@ create database Jewtoonz;
 USE Jewtoonz;
 
 CREATE TABLE Jewtoonz.JewtoonCategory (
-  jewtoonCategoryID INT NOT NULL,
+  jewtoonCategoryID INT auto_increment NOT NULL,
   jewtoonCategoryName VARCHAR(15) NOT NULL,
   PRIMARY KEY (jewtoonCategoryID)
   );
 
 CREATE TABLE Jewtoonz.JewtoonImage (
-  imageID INT NOT NULL,
+  imageID INT auto_increment NOT NULL,
   jewtoonCategoryID INT NOT NULL,
   PRIMARY KEY (imageID),
   CONSTRAINT fk_Jewtoon_JewtoonCategory1
@@ -17,13 +17,13 @@ CREATE TABLE Jewtoonz.JewtoonImage (
   );
 
 create table jewtoonz.userType(
-  typeID int not null,
+  typeID int auto_increment not null,
   typeName varchar(20) not null,
   primary key (typeID)
 );
 
 CREATE TABLE Jewtoonz.User (
-  userID INT NOT NULL,
+  userID INT auto_increment NOT NULL,
   firstName VARCHAR(45) NOT NULL,
   lastName VARCHAR(45) NOT NULL,
   email VARCHAR(45) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE Jewtoonz.User (
   );
 
 CREATE TABLE Jewtoonz.Post (
-  postID INT NOT NULL,
+  postID INT auto_increment NOT NULL,
   userID INT NOT NULL,
   imageID INT NOT NULL,
   timePosted DATE NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE Jewtoonz.Post (
     );
     
 CREATE TABLE Jewtoonz.Comment (
-  commentID INT NOT NULL,
+  commentID INT auto_increment NOT NULL,
   commentText VARCHAR(100) NOT NULL,
   userID INT NOT NULL,
   timePosted DATETIME NOT NULL,
