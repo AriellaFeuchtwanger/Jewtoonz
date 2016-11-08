@@ -1,11 +1,14 @@
 <?php
 include("header.php");
 include ("menu.php");
+require_once 'functions.php';
 ?>
 
 <form method="post" action="accountSummary.php">
-    <label> User Name: </label>
-    <input type="text" name="userName"><br>
+    <label> First Name: </label>
+    <input type="text" name="firstName"><br>
+    <label>Last Name:</label>
+    <input type="text" name="lastName"><br>
     <label> Email:</label>
     <input type="text" name="email"><br/>
     <label>Password: </label>
@@ -14,15 +17,12 @@ include ("menu.php");
     <label>Male<input type="radio" name="gender" value="male" checked></label>
     <label>Female<input type="radio" name="gender" value="female"> </label><br>
     </div>
-    <label>What type of cartoons do you like?</label>
+    <label>User Type:</label>
     <select name="type">
-        <!--I have no idea what types of jewtoonz there are
-        Going to pull from a database-->
-        <option selected disabled>Select a type of cartoon</option>
-        <option value="a">Type A</option>
-        <option value="b">Type B</option>
-        <option value="c">Type C</option>
-        <option value="d">Type D</option>
+        <option selected disabled>User Type</option>
+       <?php
+        getUserTypes();
+       ?>
     </select>
     <br/>
     <input type="submit" value="Create Account"/>

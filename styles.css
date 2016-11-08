@@ -1,16 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+
+html {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-family: 'Coiny', cursive;
+}
+
 body{
     background-color: #ADFF12;
+    font-size: 17px;
+    font-family: 'Coiny', cursive;
 }
 form{
     align-content: center;
     width: 70%;
     margin-left: 15%;
     clear: both;
+    font-family: 'Coiny', cursive;
 }
 
-input[type=text], input[type=password]{
+input[type=text], input[type=password], select{
     float: right;
     clear: both;
+    width: 55%;
+}
+
+input[type=submit]{
+    width: 30%;
+    margin-left: 35%;
+    background-color: #ff80c6;
+    border-color: #FF1294;
+    border-radius: 25px;
+}
+
+input[type=submit], option{
+    font-family: 'Coiny', cursive;
 }
 
 label{
