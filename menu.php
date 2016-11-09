@@ -1,4 +1,5 @@
 
+
 <ul>
     <li><a href="#">Home</a>
     <li/>
@@ -9,4 +10,5 @@
     </ul>
     <li><a href="#">About</a>
     <li><a href="#">Contact</a>
+    <li><a href="viewPosts.php">View All Posts</a>
 </ul>
