@@ -1,5 +1,8 @@
 <?php
 require_once 'databaseConnection.php';
+include("header.php");
+include("menu.php");
+
 $query =
 "select u.firstName, u.lastName, DATE_FORMAT(p.dateposted,'%m/%d/%Y') as datePosted, i.imagePath, jc.jewtooncategoryname
 from post p
