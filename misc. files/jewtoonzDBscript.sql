@@ -34,12 +34,12 @@ CREATE TABLE Jewtoonz.User (
 	foreign key (userTypeID)
     references jewtoonz.usertype (typeID)
   );
-
+  
 CREATE TABLE Jewtoonz.Post (
   postID INT auto_increment NOT NULL,
   userID INT NOT NULL,
   imageID INT NOT NULL,
-  timePosted DATE NOT NULL,
+  datePosted DATEtime NOT NULL default now(),
   Title VARCHAR(45) NULL,
   PRIMARY KEY (postID, imageID, userID),
   CONSTRAINT fk_Post_User1
@@ -64,3 +64,4 @@ CREATE TABLE Jewtoonz.Comment (
 	foreign key (postID)
     references jewtoonz.post (postID)
     );
+    
