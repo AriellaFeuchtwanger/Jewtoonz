@@ -1,20 +1,19 @@
 <?php
 include("header.php");
 include ("menu.php");
-require 'contact.php';
 ?>
-<form id="contactForm" action="#" method="POST" enctype="multipart/form-data">
-	<div class="row">
-		<label for="name">Your name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="email">Your email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Your message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-	</div>
+<form id="contactForm" action="contact.php" method="POST">
+	<label>Your name:</label><br />
+        <input type="text" name="name" placeholder="Name" /><br />
+        <label>Email:</label><br />
+        <input type="text" name="email" placeholder="someone@example.com" /><br />
+	<label>Subject:</label><br />
+        <input type="text" name="subject" placeholder="subject" /><br />
+	<label>Your message:</label><br />
+	<textarea id="message" name="message" rows="7" cols="30"></textarea><br />
 	<input id="submit_button" type="submit" value="Send email" />
-</form>		
+</form>
+
+<?php
+include("footer.php");
+?>
