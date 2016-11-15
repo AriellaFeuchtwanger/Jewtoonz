@@ -9,6 +9,6 @@
         <li><a href = "accountSummary.php">Account Summary</a>
     </ul>
     <li><a href="#">About</a>
-    <li><a href="contact.php">Contact</a>
+    <li><a href="contactInfo.php">Contact</a>
     <li><a href="viewPosts.php">View All Posts</a>
 </ul>

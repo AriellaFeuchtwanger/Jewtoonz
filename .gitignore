@@ -6,3 +6,4 @@ npm-debug.log
 /vendor
 /nbproject/private/
 /PHPMailer-master/nbproject/private/
+/mailFiles/nbproject/private

@@ -1,15 +1,13 @@
 <?php
-echo 'testing';
-include("header.php");
-include ("menu.php");
 require_once 'functions.php';
 require 'PHPMailer-master/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 $mail->isSMTP();
 $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
+$mail->SMTPDebug = 2;
 $mail->Host = 'smtp.gmail.com';
-$mail->Port = 80;
+$mail->Port = 587;
 $mail->Username = 'jewtoonz@gmail.com';
 $mail->Password = 'jewt00nz';
 $mail->setFrom('leahy1818@gmail.com');
