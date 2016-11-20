@@ -50,7 +50,7 @@ label{
     height: 10%;
 }
 
-ul{
+/*ul{
     padding: 0;
     list-style: none;
     background: #ffffff;
@@ -72,7 +72,7 @@ ul li a:hover{
     background: #ff80c6;
 }
 ul li ul.dropdown{
-    min-width: 100%; /* Set width of the dropdown */
+    min-width: 100%;  Set width of the dropdown 
     background: #ffffff;
     display: none;
     position: absolute;
@@ -80,11 +80,11 @@ ul li ul.dropdown{
     left: 0;
 }
 ul li:hover ul.dropdown{
-    display: block;	/* Display the dropdown */
+    display: block;	 Display the dropdown 
 }
 ul li ul.dropdown li{
     display: block;
-}
+}*/
 
 #logo{
     margin-left: 30%;
