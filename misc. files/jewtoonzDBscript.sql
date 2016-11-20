@@ -65,3 +65,11 @@ CREATE TABLE Jewtoonz.Comment (
     references jewtoonz.post (postID)
     );
     
+create table image
+(imageID int not null,
+imagePath varchar(60) not null,
+primary key (imageID));
+
+alter table jewtoonz.jewtoonimage
+add foreign key (imageID)
+references image(imageID);
