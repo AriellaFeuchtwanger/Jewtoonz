@@ -2,7 +2,7 @@
 <script>
     $(function () {
         $("#menu").menu({
-            position:{ my: "bottom", at: "right-0 top+60" }
+            position:{ my: "center bottom", at: "right-0 top+65" }
         });
 
     });
