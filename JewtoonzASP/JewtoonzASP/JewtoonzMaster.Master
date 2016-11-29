@@ -5,16 +5,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="~/App_Themes/JewtoonzTheme/jewtoonzTheme.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body runat="server">
     <header>
-        <div class="headerTitle"></div>
-        <div class="headerLogo"></div>
-    </header>
-    <form id="form1" runat="server">
-        <div>
+        <div class="header">
+            <div id="headerLogo" />
         </div>
-    </form>
-    <footer></footer>
+    </header>
+    <div class="midSection">
+        <asp:ContentPlaceHolder runat="server" ID="placeholder" />
+    </div>
+    <div class="footer">
+        Jewtoonz 2016   
+    </div>
 </body>
 </html>

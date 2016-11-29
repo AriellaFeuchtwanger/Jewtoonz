@@ -107,28 +107,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Contact.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="Resources\JEWTOONZ.png" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
-    <Content Include="Styles\jewtoonzTheme.css" />
+    <Content Include="App_Themes\JewtoonzTheme\jewtoonzTheme.css" />
     <Content Include="Web.config" />
+    <Content Include="Home.aspx" />
+    <Content Include="Contact.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
     <Compile Include="JewtoonzMaster.Master.cs">
       <DependentUpon>JewtoonzMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -137,6 +124,20 @@
       <DependentUpon>JewtoonzMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

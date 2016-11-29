@@ -1,0 +1,21 @@
+﻿body {
+    background-color: #ADFF12;
+    font-size: 17px;
+    font-family: 'Coiny', cursive;
+}
+
+.header {
+    /*background-color: slateblue;*/
+}
+
+#headerLogo {
+    position: relative;
+    overflow: visible;
+    background-image: url(~/Resources/JEWTOONZ.png);
+    align-content: center;
+    overflow: visible;
+}
+
+.footer {
+    text-align: center;
+}
