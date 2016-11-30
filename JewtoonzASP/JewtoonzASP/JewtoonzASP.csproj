@@ -94,11 +94,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ideal-Image-Slider-JS-master\.gitignore" />
+    <Content Include="Ideal-Image-Slider-JS-master\Gruntfile.js" />
+    <Content Include="Ideal-Image-Slider-JS-master\ideal-image-slider.css" />
+    <Content Include="Ideal-Image-Slider-JS-master\ideal-image-slider.js" />
+    <Content Include="Ideal-Image-Slider-JS-master\ideal-image-slider.min.js" />
+    <Content Include="Ideal-Image-Slider-JS-master\Themes\default\default.css" />
+    <Content Include="jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="js\startupFile.js" />
+    <Content Include="Resources\Afikoman.jpg" />
+    <Content Include="Resources\PhoneHome.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="JewtoonzMaster.Master" />
+    <Content Include="Ideal-Image-Slider-JS-master\.travis.yml" />
+    <Content Include="Ideal-Image-Slider-JS-master\bower.json" />
+    <Content Include="Ideal-Image-Slider-JS-master\CHANGELOG.md" />
+    <Content Include="Ideal-Image-Slider-JS-master\LICENSE" />
+    <Content Include="Ideal-Image-Slider-JS-master\package.json" />
+    <Content Include="Ideal-Image-Slider-JS-master\README.md" />
+    <Content Include="jquery-ui-1.12.1.custom\package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

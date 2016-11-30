@@ -9,11 +9,9 @@
 }
 
 #headerLogo {
-    position: relative;
-    overflow: visible;
-    background-image: url(~/Resources/JEWTOONZ.png);
-    align-content: center;
-    overflow: visible;
+    display: block;
+    margin: auto;
+    width: 50%;
 }
 
 .footer {
