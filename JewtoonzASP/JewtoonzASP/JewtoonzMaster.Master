@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JewtoonzMaster.master.cs" Inherits="JewtoonzASP.JewtoonzMaster" %>
 
 <!DOCTYPE html>
-<%--<html xmlns="http://www.w3.org/1999/xhtml">--%>
 <head runat="server">
     <title></title>
     <link rel="stylesheet" href="Ideal-Image-Slider-JS-master/ideal-image-slider.css" />
