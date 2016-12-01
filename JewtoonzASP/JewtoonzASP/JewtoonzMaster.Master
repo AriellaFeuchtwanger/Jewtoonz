@@ -1,12 +1,13 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JewtoonzMaster.master.cs" Inherits="JewtoonzASP.JewtoonzMaster" %>
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%--<html xmlns="http://www.w3.org/1999/xhtml">--%>
 <head runat="server">
     <title></title>
-    <link href="~/App_Themes/JewtoonzTheme/jewtoonzTheme.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Ideal-Image-Slider-JS-master/ideal-image-slider.css" />
+    <link rel="stylesheet" href="App_Themes/JewtoonzTheme/jewtoonzTheme.css" />
 </head>
-<body runat="server">
+<body>
     <header>
         <div class="header">
             <img id="headerLogo" src="Resources/JEWTOONZ.png" />
@@ -15,9 +16,17 @@
     <div class="midSection">
         <asp:ContentPlaceHolder runat="server" ID="placeholder" />
     </div>
+
     <div class="footer">
         Jewtoonz 2016   
     </div>
-    <script src="Ideal-Image-Slider-JS-master/ideal-image-slider.js"></script>
+    <script src="../Ideal-Image-Slider-JS-master/ideal-image-slider.js"></script>
+    <script>
+        var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            height: 400,
+            interval: 4000
+        });
+        slider.start();
+    </script>
 </body>
-</html>
