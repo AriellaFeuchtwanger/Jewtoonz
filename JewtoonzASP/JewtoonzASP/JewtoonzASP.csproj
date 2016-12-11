@@ -94,6 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Contact.txt" />
+    <Content Include="Controls\ContactForm.ascx" />
     <Content Include="Ideal-Image-Slider-JS-master\.gitignore" />
     <Content Include="Ideal-Image-Slider-JS-master\Gruntfile.js" />
     <Content Include="Ideal-Image-Slider-JS-master\ideal-image-slider.css" />
@@ -132,6 +134,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\JEWTOONZ.png" />
@@ -143,6 +148,13 @@
     <Content Include="Contact.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\ContactForm.ascx.cs">
+      <DependentUpon>ContactForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ContactForm.ascx.designer.cs">
+      <DependentUpon>ContactForm.ascx</DependentUpon>
+    </Compile>
     <Compile Include="JewtoonzMaster.Master.cs">
       <DependentUpon>JewtoonzMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

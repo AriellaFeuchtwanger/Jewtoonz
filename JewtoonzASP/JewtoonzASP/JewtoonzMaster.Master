@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="App_Themes/JewtoonzTheme/jewtoonzTheme.css" />
 </head>
 <body>
+    <form id="form1" runat="server">
     <header>
         <div class="header">
             <img id="headerLogo" src="Resources/JEWTOONZ.png" />
         </div>
     </header>
+    <nav>
+        <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </nav>
     <div class="midSection">
-        <asp:ContentPlaceHolder runat="server" ID="placeholder" />
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        <asp:ContentPlaceHolder runat="server" ID="placeholder" >
+            <asp:TextBox ID="NameBox" runat="server" BackColor="#ADFF12"></asp:TextBox>
+        </asp:ContentPlaceHolder>
     </div>
 
     <div class="footer">
@@ -28,4 +36,5 @@
         });
         slider.start();
     </script>
+    </form>
 </body>

@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A8848181-19D7-40DD-9743-5E1E2FB7A59C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Jewtoonz</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\config\applicationhost.config" />
+    <None Include=".vs\JewtoonzASP\v14\.suo" />
+    <None Include="JewtoonzASP\ApplicationInsights.config" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\.gitignore" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\.travis.yml" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\bower.json" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\CHANGELOG.md" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\LICENSE" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\package.json" />
+    <None Include="JewtoonzASP\Ideal-Image-Slider-JS-master\README.md" />
+    <None Include="JewtoonzASP\JewtoonzMaster.Master">
+      <SubType>ASPXCodeBehind</SubType>
+    </None>
+    <None Include="JewtoonzASP\jquery-ui-1.12.1.custom\package.json" />
+    <None Include="JewtoonzASP\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="JewtoonzASP\packages.config" />
+    <None Include="JewtoonzASP\Web.config" />
+    <None Include="JewtoonzASP\Web.Debug.config" />
+    <None Include="JewtoonzASP\Web.Release.config" />
+    <None Include="packages\Microsoft.ApplicationInsights.1.2.3\Microsoft.ApplicationInsights.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\content\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\content\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\content\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\Microsoft.ApplicationInsights.DependencyCollector.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\content\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\content\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\content\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net40\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net40\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net40\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net40\web.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net40\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net45\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net45\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net45\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net45\web.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\content\net45\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\Microsoft.ApplicationInsights.Web.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\content\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\content\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\content\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\Microsoft.ApplicationInsights.WindowsServer.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\Tools\install.ps1" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\content\ApplicationInsights.config.install.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\content\ApplicationInsights.config.transform" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\content\ApplicationInsights.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.install.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\content\web.config.uninstall.xdt" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\init.ps1" />
+    <None Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\tools\uninstall.ps1" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\Microsoft.Net.Compilers.1.0.0.nupkg" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\ThirdPartyNotices.rtf" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CSharp.Core.targets" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.VisualBasic.Core.targets" />
+    <None Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JewtoonzASP\App_Themes\JewtoonzTheme\jewtoonzTheme.css" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.Web.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="JewtoonzASP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="JewtoonzASP\Contact.aspx" />
+    <Content Include="JewtoonzASP\Home.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="JewtoonzASP\Ideal-Image-Slider-JS-master\Gruntfile.js" />
+    <Content Include="JewtoonzASP\Ideal-Image-Slider-JS-master\ideal-image-slider.css" />
+    <Content Include="JewtoonzASP\Ideal-Image-Slider-JS-master\ideal-image-slider.js" />
+    <Content Include="JewtoonzASP\Ideal-Image-Slider-JS-master\ideal-image-slider.min.js" />
+    <Content Include="JewtoonzASP\Ideal-Image-Slider-JS-master\Themes\default\default.css" />
+    <Content Include="JewtoonzASP\JewtoonzASP.csproj" />
+    <Content Include="JewtoonzASP\JewtoonzASP.csproj.user" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\AUTHORS.txt" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\external\jquery\jquery.js" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\index.html" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.js" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.min.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.min.js" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.structure.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.structure.min.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
+    <Content Include="JewtoonzASP\jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="JewtoonzASP\Resources\Afikoman.jpg" />
+    <Content Include="JewtoonzASP\Resources\JEWTOONZ.png" />
+    <Content Include="JewtoonzASP\Resources\PhoneHome.jpg" />
+    <Content Include="JewtoonzASP\scripts\ai.0.15.0-build58334.js" />
+    <Content Include="JewtoonzASP\scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\net40\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\net40\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\net45\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\wp8\Microsoft.ApplicationInsights.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.1.2.3\lib\wp8\Microsoft.ApplicationInsights.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net40\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0\lib\net45\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net40\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net40\Microsoft.AI.DependencyCollector.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3\lib\net45\Microsoft.AI.DependencyCollector.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334\content\scripts\ai.0.15.0-build58334.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334\content\scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="packages\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334\tools\prefix.html" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net40\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3\lib\net45\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net40\Microsoft.AI.Web.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net40\Microsoft.AI.Web.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.Web.1.2.3\lib\net45\Microsoft.AI.Web.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net40\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net40\Microsoft.AI.WindowsServer.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3\lib\net45\Microsoft.AI.WindowsServer.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net40\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net40\Microsoft.AI.ServerTelemetryChannel.XML" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3\lib\net45\Microsoft.AI.ServerTelemetryChannel.XML" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\csc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Collections.Immutable.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\System.Reflection.Metadata.dll" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\vbc.exe" />
+    <Content Include="packages\Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JewtoonzASP\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\JewtoonzMaster.Master.cs">
+      <DependentUpon>JewtoonzMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\JewtoonzMaster.Master.designer.cs">
+      <DependentUpon>JewtoonzMaster.Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JewtoonzASP\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="JewtoonzASP\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="JewtoonzASP\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="JewtoonzASP\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\Jewtoonz\v14\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
