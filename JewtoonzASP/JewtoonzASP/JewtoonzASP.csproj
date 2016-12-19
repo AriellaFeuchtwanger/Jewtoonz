@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Contact.txt" />
+    <Content Include="App_Data\Jewtoonz.mdf" />
     <Content Include="Controls\ContactForm.ascx" />
     <Content Include="Ideal-Image-Slider-JS-master\.gitignore" />
     <Content Include="Ideal-Image-Slider-JS-master\Gruntfile.js" />
