@@ -11,7 +11,10 @@ namespace JewtoonzASP
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Response.Cookies["Name"] != null)
+            {
+                NameBox.Text = Response.Cookies["Name"]["Name"];
+            }
         }
     }
 }

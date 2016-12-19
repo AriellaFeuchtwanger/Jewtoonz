@@ -24,3 +24,7 @@
 .footer {
     text-align: center;
 }
+
+#ContactForm TextBox{
+    float: right;
+}
