@@ -96,6 +96,8 @@
   <ItemGroup>
     <Content Include="App_Data\Contact.txt" />
     <Content Include="Controls\ContactForm.ascx" />
+    <Content Include="Errors\OtherErrors.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Ideal-Image-Slider-JS-master\.gitignore" />
     <Content Include="Ideal-Image-Slider-JS-master\Gruntfile.js" />
     <Content Include="Ideal-Image-Slider-JS-master\ideal-image-slider.css" />
@@ -154,6 +156,13 @@
     </Compile>
     <Compile Include="Controls\ContactForm.ascx.designer.cs">
       <DependentUpon>ContactForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Errors\OtherErrors.aspx.cs">
+      <DependentUpon>OtherErrors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Errors\OtherErrors.aspx.designer.cs">
+      <DependentUpon>OtherErrors.aspx</DependentUpon>
     </Compile>
     <Compile Include="JewtoonzMaster.Master.cs">
       <DependentUpon>JewtoonzMaster.Master</DependentUpon>
