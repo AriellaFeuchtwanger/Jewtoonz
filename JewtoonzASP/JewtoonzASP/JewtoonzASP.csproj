@@ -131,6 +131,7 @@
     <Content Include="Ideal-Image-Slider-JS-master\package.json" />
     <Content Include="Ideal-Image-Slider-JS-master\README.md" />
     <Content Include="jquery-ui-1.12.1.custom\package.json" />
+    <Content Include="AdministratorMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,6 +152,13 @@
     <Content Include="Contact.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdministratorMaster.Master.cs">
+      <DependentUpon>AdministratorMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministratorMaster.Master.designer.cs">
+      <DependentUpon>AdministratorMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Administrators\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
