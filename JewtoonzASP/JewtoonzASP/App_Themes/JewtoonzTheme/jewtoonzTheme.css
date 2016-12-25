@@ -28,3 +28,12 @@
 #ContactForm TextBox{
     float: right;
 }
+
+.adminButton{
+    width: 30%;
+    margin-left: 35%;
+    background-color: #ff80c6;
+    border-color: #FF1294;
+    border-radius: 25px;
+    font-family: 'Coiny', cursive;
+}

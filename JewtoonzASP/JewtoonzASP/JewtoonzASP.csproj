@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrators\Default.aspx" />
     <Content Include="App_Data\Contact.txt" />
     <Content Include="Controls\ContactForm.ascx" />
     <Content Include="Errors\OtherErrors.aspx" />
@@ -150,6 +151,13 @@
     <Content Include="Contact.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrators\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrators\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\ContactForm.ascx.cs">
       <DependentUpon>ContactForm.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
