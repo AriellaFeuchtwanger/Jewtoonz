@@ -2,10 +2,9 @@
 
 include ("header.php");
 include ("menu.php");
-?>
-<?php
 require_once 'databaseConnection.php';
 
+if(isset($_POST['firstName'])){
 $first = $_POST['firstName'];
 $last = $_POST['lastName'];
 $type = $_POST['type'];
@@ -28,8 +27,8 @@ echo "Email: ".$result['email']."<br>";
 echo "Password: ".$result['password']."<br>";
 echo "Type of User: ".$result['typeName']."<br>";
 echo "</div>";
-?>
-<?php
-
+} else{
+    header("Location: index.php");
+}
 include("footer.php");
 ?>
