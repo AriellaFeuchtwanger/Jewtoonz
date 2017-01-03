@@ -115,6 +115,7 @@
     <Content Include="jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
     <Content Include="jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
     <Content Include="jquery-ui-1.12.1.custom\LICENSE.txt" />
+    <Content Include="Posts.aspx" />
     <Content Include="Resources\Afikoman.jpg" />
     <Content Include="Resources\PhoneHome.jpg" />
     <Content Include="packages.config" />
@@ -162,6 +163,13 @@
     </Compile>
     <Compile Include="JewtoonzMaster.Master.designer.cs">
       <DependentUpon>JewtoonzMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Posts.aspx.cs">
+      <DependentUpon>Posts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Posts.aspx.designer.cs">
+      <DependentUpon>Posts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Home.aspx.cs">

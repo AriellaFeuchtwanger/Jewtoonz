@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace JewtoonzASP
 {
-    public partial class JewtoonzMaster : System.Web.UI.MasterPage
+    public partial class Posts : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Response.Cookies["Name"] != null)
-            {
-                //NameBox.Text = Response.Cookies["Name"]["Name"];
-            }
+
         }
     }
 }
