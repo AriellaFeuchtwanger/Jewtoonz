@@ -4,14 +4,9 @@
 -- select * from user;
 -- select * from jewtoonimage;
 
-insert into userType
-values
-(1, 'type1'),
-(2, 'type2');
 
-insert into  user
+insert into [user]
 values
-(1, 'user', '01', 'user01@gmail.com', '123456', 1),
 (2, 'user', '02', 'user02@gmail.com', '123456', 1),
 (3, 'user', '03', 'user03@gmail.com', '123456', 1);
 
@@ -22,10 +17,10 @@ values
 
 create table image
 (imageID int not null,
-imagePath varchar(60) not null,
+imagePath varchar(200) not null,
 primary key (imageID));
 
-alter table jewtoonz.jewtoonimage
+alter table jewtoonimage
 add foreign key (imageID)
 references image(imageID);
 
